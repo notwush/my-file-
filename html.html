@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<button id="themeBtn">Dark Mode</button>
+
+<div>
+    <h2>
+        <a href="#home">Home</a> |
+        <a href="#about">About Me</a>
+    </h2>
+</div>
+
+<hr>
+
+<table width="100%">
+    <tr>
+
+        <td style="padding-right: 20px; vertical-align: top;">
+
+            <div id="home" style="text-align: center;">
+                <img id="profilePic"
+                     src="https://uploads.onecompiler.io/444vmm2nq/444vkbq4h/img.student.png"
+                     alt="Profile Image" width="200"><br><br>
+
+                <h2>Nambio, Markie L.</h2>
+                <span id="jobTitle">Web Developer</span><br><br>
+                <button id="editJobBtn">Edit Job Title</button>
+            </div>
+
+            <hr>
+
+            <div>
+                <h3>Contact</h3>
+                <p>Email: nambioml@students.nu-fairview.edu.ph</p>
+                <p>Phone: 09278790898</p>
+            </div>
+
+            <hr>
+
+            <button id="toggleSkillsBtn">Hide Skills</button>
+            <div id="skillsSection">
+                <h3>Skills</h3>
+                <dl>
+                    <dd>Frontend</dd>
+                    <dd>HTML</dd>
+                    <dd>CSS</dd>
+                    <dd>JavaScript</dd>
+                </dl>
+            </div>
+
+            <hr>
+
+            <button id="toggleHobbiesBtn">Hide Hobbies</button>
+            <div id="hobbiesSection">
+                <h3>Hobbies</h3>
+                <dl>
+                    <dd> Reading </dd>
+                    <dd>Sleeping</dd>
+                    <dd>Gaming</dd>
+                </dl>
+            </div>
+
+        </td>
+
+        <td style="padding-left: 20px; vertical-align: top;">
+
+            <div id="about">
+                <h2>About Me</h2>
+                <span>
+                    I’m currently a second-year Bachelor of Science in Information Technology student with a strong interest in technology and problem-solving. I enjoy learning about programming, networking, and how technology can help improve everyday life. I’m excited to continue building my skills and exploring new opportunities in the IT field.
+                </span>
+            </div>
+
+            <hr>
+
+            <div id="experiences">
+                <h2>Experiences & Achievements</h2>
+                <dl>
+                    <dd>2nd Year, 1st Term Dean's Lister</dd>
+                    <dd>NSTP Graduate</dd>
+                    <dd>Tryouts League of Legends Champion</dd>
+                </dl>
+            </div>
+
+            <hr>
+
+            <h2>Message Me</h2>
+            <form onsubmit="return validateForm()">
+
+                <p>
+                    Name:<br>
+                    <input type="text" id="nameField">
+                </p>
+
+                <p>
+                    Email:<br>
+                    <input type="email" id="emailField">
+                </p>
+
+                <p>
+                    Message:<br>
+                    <textarea id="msgBox" maxlength="200"></textarea>
+                </p>
+
+                <p>Characters left: <span id="counter">200</span></p>
+
+                <p>
+                    <input type="submit" value="Send">
+                </p>
+            </form>
+
+            <button id="greetingBtn">Show Greeting</button>
+            <p id="greetingText"></p>
+
+        </td>
+
+    </tr>
+</table>
+
+<hr>
+
+<footer>
+    <center>
+        <strong>WebProg - Web Programming 2025</strong><br>
+        <p id="dateDisplay"></p>
+    </center>
+</footer>
+
+</body>
+</html>
